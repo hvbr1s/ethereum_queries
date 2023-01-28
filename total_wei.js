@@ -1,7 +1,7 @@
 const axios = require('axios');
 const ALCHEMY_URL = "https://eth-mainnet.g.alchemy.com/v2/V9QniLcFpQjrpYVQITelw1cZY5Jspg60";
 
-const addresses = ["0x07a812F11ff9857C7Db91bcD58b968AAaC0A86ED","0xeEde8AaCbF9BD025bf343255C5ebb1ca60fF6453", "0x95222290DD7278Aa3Ddd389Cc1E1d165CC4BAfe5"];
+const addresses = [];
 
 async function getTotalBalance() {
     const responses = await axios.post(ALCHEMY_URL, (addresses.map(addr => ({
@@ -17,7 +17,6 @@ async function getTotalBalance() {
             for (let i = 0; i < value.length; i++) {
                 total_balance += parseInt(value[i].result, 16)   
             }
-            //return ("You have " + ((total_balance / Math.pow(10, total_balance.toString().length))*100) + " ETH in your wallet!")
             return ("You have " + total_balance + " wei in your wallet!")
         }
         return add()
