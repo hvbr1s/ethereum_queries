@@ -1,6 +1,4 @@
 const axios = require('axios');
-
-// copy-paste your URL provided in your Alchemy.com dashboard
 const ALCHEMY_URL = "https://eth-mainnet.g.alchemy.com/v2/V9QniLcFpQjrpYVQITelw1cZY5Jspg60";
 
 async function transactionCount(){
