@@ -31,5 +31,4 @@ async function getTotalBalance() {
 }
 console.log(getTotalBalance())
 module.exports = getTotalBalance
-module.exports
 
