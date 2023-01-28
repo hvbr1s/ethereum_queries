@@ -1,4 +1,3 @@
-const ethers = require("ethers");
 const axios = require('axios');
 
 // copy-paste your URL provided in your Alchemy.com dashboard
