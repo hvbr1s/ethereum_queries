@@ -1,5 +1,5 @@
 const axios = require('axios');
-const ALCHEMY_URL = "https://eth-mainnet.g.alchemy.com/v2/V9QniLcFpQjrpYVQITelw1cZY5Jspg60";
+const ALCHEMY_URL = "";
 
 async function transactionCount(){
   const latest_block = await axios.post(ALCHEMY_URL, {
