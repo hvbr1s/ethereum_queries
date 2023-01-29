@@ -17,7 +17,7 @@ async function transactionCount(){
     jsonrpc: "2.0",
     id: 2,
     method: "eth_getBalance",
-    params: ["0x07a812F11ff9857C7Db91bcD58b968AAaC0A86ED", "latest"]
+    params: ["", "latest"]
 
 
   }
