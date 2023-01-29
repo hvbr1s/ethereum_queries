@@ -17,7 +17,7 @@ async function getTotalBalance() {
             for (let i = 0; i < value.length; i++) {
                 total_balance += parseInt(value[i].result, 16)   
             }
-            return ("You have " + total_balance + " wei in your wallet!")
+            return ("You have " + (total_balance/(10**18)) + " ETH in your wallet!")
         }
         return add()
 
